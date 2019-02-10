@@ -30,9 +30,3 @@ function theme_enqueue_styles() {
 
 
 }
-
-/****** social media icons *****/
-// add_action( 'wp_enqueue_scripts', 'add_fontawesome' );
-// function add_fontawesome(){
-//       wp_enqueue_style( 'load-fa', 'https://use.fontawesome.com/releases/v5.0.8/css/all.css' );
-// }

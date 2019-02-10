@@ -58,7 +58,17 @@ $container   = get_theme_mod( 'understrap_container_type' );
 			</main><!-- #main -->
 
 			<!-- The pagination component -->
-			<?php understrap_pagination(); ?>
+					<!-- The pagination component -->
+    			<!-- <?php understrap_pagination(); ?> -->
+    			<?php the_posts_navigation(
+    array(
+        'prev_text' => __('<< Older', 'understrap_child'),
+        'next_text' => __('Newer >>', 'understrap_child'),
+        'screen_reader_text' => __('Posts navigation', 'understrap_child')
+    )
+); ?>
+
+
 
 		</div><!-- #primary -->
 

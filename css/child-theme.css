@@ -7,6 +7,10 @@
   font-family: 'Montserrat-Italic';
   src: url(../fonts/Montserrat/Montserrat-Italic.ttf); }
 
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato/Lato-Light.ttf); }
+
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -10830,7 +10834,8 @@ cite {
     color: #212529; }
 
 ul, ol {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
 
 a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus, .btn-link:focus-within, .btn-link:visited {
   text-decoration: none; }
@@ -10842,7 +10847,7 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus, .btn-link:focus-wit
   border: 0; }
 
 .font-style-1, body {
-  font-family: 'Montserrat-Light';
+  font-family: "Montserrat-Light";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -10860,11 +10865,19 @@ a:hover, .btn-link:hover, .btn-link:active, .btn-link:focus, .btn-link:focus-wit
   font-style: italic;
   font-size: 40px; }
 
+.font-style-4, p, li a, span {
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 1rem; }
+
 .white {
   color: #ffffff; }
 
 .nav-pills .nav-link {
   border-radius: 1.25rem; }
+
+.screen-reader-text {
+  display: none; }
 
 .search-form {
   margin-bottom: 20px; }
@@ -10914,6 +10927,12 @@ input[type="search"]::-webkit-search-results-decoration {
   border-bottom: 1px solid #c7cac9;
   border-left: 1px solid #c7cac9;
   width: 100%; }
+
+.tribe-events-list-widget .tribe-events-list-widget-events {
+  padding: 0 !important; }
+
+.tribe-events-widget-link {
+  display: none !important; }
 
 .tribe-events-ical.tribe-events-button {
   display: none !important; }
@@ -11088,3 +11107,29 @@ input[type="search"]::-webkit-search-results-decoration {
 
 #cboxCurrent {
   display: none !important; }
+
+.blog article, .single-post article {
+  margin-bottom: 50px; }
+  .blog article img, .single-post article img {
+    padding-bottom: 20px;
+    width: 100%; }
+  .blog article .entry-meta, .single-post article .entry-meta {
+    padding-bottom: 12px;
+    font-size: .8rem; }
+  .blog article h2, .single-post article h2 {
+    margin-bottom: 0; }
+  .blog article .blog-archive-content, .single-post article .blog-archive-content {
+    padding: 20px; }
+
+.blog article {
+  background: #EDEFF0; }
+
+.understrap-read-more-link {
+  padding: 5px; }
+
+.nav-links {
+  display: flex; }
+  .nav-links .nav-previous {
+    margin-right: auto; }
+  .nav-links .nav-next {
+    margin-left: auto; }
